@@ -2,15 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import reportWebVitals from './reportWebVitals'; 
+import { BrowserRouter,HashRouter} from 'react-router-dom';
+import ScrollToTop from './scrol';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <HashRouter>
+    <ScrollToTop/>
     <App />
-  </React.StrictMode>
+    </HashRouter>
+      
+  
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
